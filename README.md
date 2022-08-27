@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - spring-hello-world
+name: Build and deploy JAR app to Azure Web App - window-ranjan
 
 on:
   push:
@@ -47,7 +47,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'spring-hello-world'
+          app-name: 'window-ranjan'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_036590fa75e24e899758c02b057e4b69 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_1234 }}
           package: '*.jar'
